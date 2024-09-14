@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bohubrihi Styled Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <style>
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+        .footer-logo {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .footer-logo i {
+            margin-right: 10px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .footer-social a {
+            color: white;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+        .footer-social a:hover {
+            color: #007bff;
+        }
+        .footer-bottom {
+            border-top: 1px solid #495057;
+            padding-top: 10px;
+        }
+
+
+
+        .footer-links {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between items */
+    flex-wrap: wrap; /* Wrap items to the next line if the screen size is too small */
+}
+
+.footer-links a {
+    flex: 1; /* Distribute space evenly */
+    margin: 0 10px; /* Add some spacing between the links */
+    text-align: left; /* Align text to the left inside each item */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links a h3, .footer-links a p {
+    margin: 5px 0; /* Adjust margins to ensure proper spacing between elements */
+    color: white; /* Optional: adjust colors based on your theme */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Optional: add hover effect */
+}
+
+
+
+
+/* Sticky header */
+nav {
+    position: fixed !important;  /* Force the position to be fixed */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white !important; /* Ensure background color is white */
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Padding to ensure content is visible below the fixed header */
+body {
+    padding-top: 70px !important; /* Adjust this value if your header height changes */
+}
+
+header{
+    height: 140px;
+}
+
+.card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+        .card-title {
+            font-weight: bold;
+        }
+        .price {
+            color: #db3eb1;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .free-course {
+            color: green;
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            color: #6c757d;
+        }
+
+
+ </style>
+</head>
+<a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" style=" font-size:30px ; color:black">Bohubrihi</a>
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: black; color: white">
+                        কোর্সসমূহ
+                    </a>  
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" style=" color:cornflowerblue">Carrier Track Course</a>
+                        <a class="dropdown-item" href="#" style=" color:cornflowerblue">Foundation Course</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" style=" color:cornflowerblue">Free Course</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            
+            <!-- Added spacing between form and link -->
+            <a class="navbar-brand ml-3" href="Login.html" style="background-color: gray; border-radius: 9px;">লগইন / সাইনআপ</a>
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-secondary text-white text-center">
+        <div class="container">
+            <h1 class="display-5">বাংলা অনলাইন কোর্স</h1>
+            <p class="lead">আপনার পছন্দের কোর্সটি বেছে নিন আর দক্ষতা অর্জন করে হয়ে উঠুন সচ্ছল</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+                <div class="card shadow-sm">
+                    <img src="b1.webp" class="card-img-top" alt="Django Course">
+                    <div class="card-body">
+                        <h5 class="card-title">App Development</h5>
+                        <p class="price">৳৬৫০০</p>
+                        <div class="stats">
+                            <span>৪২ লেসন</span>
+                            <span>১১১ শিক্ষার্থী</span>
+                        </div>
+                    </div>
+                </div>
+            </a>  
+    
+            <!-- Card 2 -->
+            <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+                <div class="card shadow-sm">
+                    <img src="b2.jpg" class="card-img-top" alt="Python Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to JAVA Programming</h5>
+                        <p class="free-course">ফ্রি কোর্স</p>
+                        <div class="stats">
+                            <span>৪৯ লেসন</span>
+                            <span>২৪০৩০ শিক্ষার্থী</span>
+                        </div>
+                    </div>
+                </div>
+            </a> 
+    
+            <!-- Card 3 -->
+            <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+                <div class="card shadow-sm">
+                    <img src="b3.jpg" class="card-img-top" alt="GRE Quantitative">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Health</h5>
+                        <p class="price">৳৬৫০০</p>
+                        <div class="stats">
+                            <span>৩৬ লেসন</span>
+                            <span>৮২ শিক্ষার্থী</span>
+                        </div>
+                    </div>
+                </div>
+            </a> 
+        </div> 
+    </div>
+    
+
+
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b1.webp" class="card-img-top" alt="Django Course">
+                <div class="card-body">
+                    <h5 class="card-title">App Development</h5>
+                    <p class="price">৳৬৫০০</p>
+                    <div class="stats">
+                        <span>৪২ লেসন</span>
+                        <span>১১১ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a>  
+
+        <!-- Card 2 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b2.jpg" class="card-img-top" alt="Python Course">
+                <div class="card-body">
+                    <h5 class="card-title">Introduction to JAVA Programming</h5>
+                    <p class="free-course">ফ্রি কোর্স</p>
+                    <div class="stats">
+                        <span>৪৯ লেসন</span>
+                        <span>২৪০৩০ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a> 
+
+        <!-- Card 3 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b3.jpg" class="card-img-top" alt="GRE Quantitative">
+                <div class="card-body">
+                    <h5 class="card-title">Social Health</h5>
+                    <p class="price">৳৬৫০০</p>
+                    <div class="stats">
+                        <span>৩৬ লেসন</span>
+                        <span>৮২ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a> 
+    </div> 
+</div>
+
+
+
+<div class="container py-5">
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b1.webp" class="card-img-top" alt="Django Course">
+                <div class="card-body">
+                    <h5 class="card-title">App Development</h5>
+                    <p class="price">৳৬৫০০</p>
+                    <div class="stats">
+                        <span>৪২ লেসন</span>
+                        <span>১১১ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a>  
+
+        <!-- Card 2 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b2.jpg" class="card-img-top" alt="Python Course">
+                <div class="card-body">
+                    <h5 class="card-title">Introduction to JAVA Programming</h5>
+                    <p class="free-course">ফ্রি কোর্স</p>
+                    <div class="stats">
+                        <span>৪৯ লেসন</span>
+                        <span>২৪০৩০ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a> 
+
+        <!-- Card 3 -->
+        <a href="Login.html" class="col-md-4 text-decoration-none text-dark" style="cursor:pointer">
+            <div class="card shadow-sm">
+                <img src="b3.jpg" class="card-img-top" alt="GRE Quantitative">
+                <div class="card-body">
+                    <h5 class="card-title">Social Health</h5>
+                    <p class="price">৳৬৫০০</p>
+                    <div class="stats">
+                        <span>৩৬ লেসন</span>
+                        <span>৮২ শিক্ষার্থী</span>
+                    </div>
+                </div>
+            </div>
+        </a> 
+    </div> 
+</div>
+
+
+
+
+
+
+
+<h3 style=" color:black"> আমাদের অর্জন</h3> <br/>
+
+<div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                
+                <div class="card-body" style="border:1px solid gray; cursor:pointer">
+                    <h5 class="card-title" style="color:red">369,086</h5>
+                    <p class="card-text">সর্বমোট এনরোলমেন্ট</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+               
+                <div class="card-body" style="border:1px solid gray; cursor:pointer">
+                    <h5 class="card-title" style="color:red">269,936</h5>
+                    <p class="card-text"> স্টুডেন্টর সংখ্যা</p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+              
+                <div class="card-body" style="border:1px solid gray; cursor:pointer">
+                    <h5 class="card-title" style="color:red">11,332</h5>
+                    <p class="card-text"> সর্বমোট ভিডিও </p>
+                   
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                
+                <div class="card-body" style="border:1px solid gray; cursor:pointer">
+                    <h5 class="card-title" style="color:red">55</h5>
+                    <p class="card-text">কোর্স </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div> <br/> <br/>
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <i class="fas fa-building"></i>Bohubrihi
+            </div>
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <a href="#">
+                    <h3> বহুব্রীহি সম্পর্কিত</h3>
+                    <p>যেকোনো বয়সের শিক্ষার্থী প্রফেশনাল অক্সিল আনসারদের জন্য বহুব্রীহি হলো দেশের সেরা স্কিল ডেভেলপমেন্ট সলিউশন।</p>
+                </a>
+                <a href="#">
+                    <h3> নেভিগেশন </h3>
+                    <p> সকল কোর্স </p>
+                    <p> ব্লগ </p>
+                    <p>টার্মস এন্ড কন্ডিশন রিফান্ড পলিসি</p>
+                </a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div> <br/>
+             
+            <!-- Footer Social Media -->
+            <div class="footer-social">
+                <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
+                <a href="#" class="fas fa-envelope" aria-label="Message"></a>
+            </div> <br/>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bohubrihi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

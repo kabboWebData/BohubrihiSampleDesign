@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2>Submit Your Information</h2>
+        <form>
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="border: 2px solid gray">
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address" style="border: 2px solid gray">
+            </div>
+
+            <!-- Skills Dropdown -->
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <select class="form-control" id="skills" style="border: 2px solid gray">
+                    <option value="web-development">Web Development</option>
+                    <option value="app-development">App Development</option>
+                    <option value="ui-ux">UI/UX Design</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <!-- University Name Field -->
+            <div class="form-group">
+                <label for="university">University Name</label>
+                <input type="text" class="form-control" id="university" placeholder="Enter your university name" style="border: 2px solid gray">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="border: 2px solid gray">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
